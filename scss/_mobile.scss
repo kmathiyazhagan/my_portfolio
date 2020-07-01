@@ -1,0 +1,154 @@
+// Widescreens
+@include mediaXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+// Desktops & Laptops
+@include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// Tablets & Small Laptops
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      background: url("../img/portrait_small.jpg");
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio";
+
+    grid-template-columns: 1fr;
+  }
+
+  .exp-info {
+    grid-template-areas:
+      "job1"
+      "job2"
+      "job3"
+      "job4"
+      "job5"
+      "job6";
+
+    grid-template-columns: 1fr;
+  }
+
+  .edu-info {
+    grid-template-areas:
+      "edu1"
+      "edu2"
+      "edu3"
+      "edu4";
+
+    grid-template-columns: 1fr;
+  }
+
+  .sk-info {
+    grid-template-areas:
+      "sk1"
+      "sk2"
+      "sk3"
+      "sk4"
+      "sk5";
+
+    grid-template-columns: 1fr;
+  }
+
+  .ind-info {
+    grid-template-areas:
+      "ind1"
+      "ind2"
+      "ind3"
+      "ind4"
+      "ind5"
+      "ind6"
+      "ind7";
+
+    grid-template-columns: 1fr;
+  }
+
+  .honor-info {
+    grid-template-areas:
+      "hon1"
+      "hon2"
+      "hon3"
+      "hon4"
+      "hon5"
+      "hon6";
+
+    grid-template-columns: 1fr;
+  }
+
+  .cert-info {
+    grid-template-areas:
+      "cert1"
+      "cert2"
+      "cert3"
+      "cert4"
+      "cert5";
+
+    grid-template-columns: 1fr;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Smartphones
+@include mediaSm {
+  main {
+    padding: 2rem;
+    #home h1 {
+      margin-top: 10vh;
+    }
+
+    .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem;
+    }
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
