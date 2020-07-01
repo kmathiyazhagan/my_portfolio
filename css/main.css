@@ -126,7 +126,7 @@ h3 {
   h1.lg-alternative,
   h2.lg-alternative,
   h3.lg-alternative {
-    font-size: 4rem; }
+    font-size: 3rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -394,13 +394,13 @@ main {
     grid-template-areas: "sk1" "sk2" "sk3" "sk4" "sk5";
     grid-template-columns: 1fr; }
   .ind-info {
-    grid-template-areas: "ind1" "ind2" "ind3";
+    grid-template-areas: "ind1" "ind2" "ind3" "ind4" "ind5" "ind6" "ind7";
     grid-template-columns: 1fr; }
   .honor-info {
-    grid-template-areas: "hon1" "hon2";
+    grid-template-areas: "hon1" "hon2" "hon3" "hon4" "hon5" "hon6";
     grid-template-columns: 1fr; }
   .cert-info {
-    grid-template-areas: "cert1" "cert2" "cert3" "cert4" "cert5" "cert6" "cert7" "cert8" "cert9" "cert10" "cert11";
+    grid-template-areas: "cert1" "cert2" "cert3" "cert4" "cert5";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
